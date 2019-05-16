@@ -12,6 +12,7 @@ public class ChatClient {
 		BufferedReader br = null;
 		PrintWriter pw = null;
 		boolean endflag = false;
+		Socket sock = null;
 		try{
 			sock = new Socket(args[1], 10001);
 			pw = new PrintWriter(new OutputStreamWriter(sock.getOutputStream()));
