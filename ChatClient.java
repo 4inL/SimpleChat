@@ -54,7 +54,8 @@ public class ChatClient {
 } // class
 
 class InputThread extends Thread{
-	private Socket sock = null;
+	private Socket sock; 
+	sock = null;
 	private BufferedReader br = null;
 	public InputThread(Socket sock, BufferedReader br){
 		this.sock = sock;
